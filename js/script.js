@@ -35,7 +35,7 @@ const viewCalc = document.getElementById('calc');
 
 const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const numberLenght = number.length;
-
+document.getElementById('add-sum').innerHTML = '';
 const view = function () {
     let add = 0;
     for (let i = 0; i < numberLenght; i++) {
@@ -43,7 +43,7 @@ const view = function () {
             add += number[i];
         }
     }
-    document.getElementById('add-sum').innerHTML += add;
+    document.getElementById('add-sum').innerHTML = add;
 }
 viewCalc.addEventListener('click', view);
 
