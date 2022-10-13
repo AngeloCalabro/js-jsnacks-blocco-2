@@ -48,3 +48,27 @@ const view = function () {
 viewCalc.addEventListener('click', view);
 
 // Snack4 - Bonus
+const valor = ['onore', 'rispetto', 'fedeltà', 'compassione']
+const act = ['coraggio', 'intraprendenza', 'vigore']
+
+if (valor.length > act.length) {
+    const elementAdd = valor.length - act.length;
+    console.log(elementAdd);
+    for (let i = 0; i < elementAdd; i++) {
+        act.push(i);
+    };
+    console.log(act);
+} else if (act.length > valor.length) {
+    const elementAdd = act.length - valor.length;
+    console.log(elementAdd);
+    for (let i = 0; i < elementAdd; i++) {
+        valor.push(i);
+    };
+    console.log(valor);
+} else {
+    console.log('sono uguali');
+}
+
+// Snack4 - Bonus BIS
+const alfa = ['a', 'b', 'c', 'd', 'e'];
+const alfaz = ['w', 'y', 'x', 'k'];
